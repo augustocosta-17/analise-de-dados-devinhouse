@@ -1,0 +1,43 @@
+# Ambientes virtuais Python
+venv/
+env/
+ENV/
+.venv/
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Arquivos de configuração do VS Code
+.vscode/
+*.code-workspace
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.log
+*.swp
+*.swo
+*~
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Arquivos de backup
+*.bak
+*.backup
+*.old
+
+# Pasta de backup local
+SISTEMA-BACKUP/
+
+# Arquivos de configuração específicos
+CONFIGURAR-INICIAL.bat
+FAZER-BACKUP.bat
