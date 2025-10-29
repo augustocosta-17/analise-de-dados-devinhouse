@@ -35,6 +35,9 @@ Modularização, funções, parâmetros, retornos e manipulação de arquivos CS
 ### [📂 Semana 05 - Integração e Análise](./semana_05)
 Integração de múltiplos arquivos, análise de dados e introdução ao Pandas e NumPy.
 
+### [📂 Semana 06 - Pandas e Tratamento de Dados](./semana_06)
+Leitura de dados CSV, identificação e tratamento de valores ausentes, limpeza de dados.
+
 ## 🚀 Habilidades Desenvolvidas
 ✅ Programação estruturada em Python  
 ✅ Manipulação de estruturas de dados  

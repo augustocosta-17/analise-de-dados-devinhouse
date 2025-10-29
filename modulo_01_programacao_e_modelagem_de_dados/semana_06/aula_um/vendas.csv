@@ -1,0 +1,11 @@
+id_venda,id_cliente,produto,quantidade,preco_unitario,data_venda
+101,1,Notebook,1,3500.00,2024-07-10
+102,2,Mouse,2,80.5,2024-07-12
+103,3,Teclado,1,,2024-07-13
+104,4,Monitor,1,1200.00,2024-07-14
+105,5,Notebook,1,3500.00,2024-07-10
+106,6,Mouse,2,80.5,2024-07-12
+107,7,Teclado,1,150.0,2024/07/15
+108,8,Monitor,1,1200.00,2024-07-14
+109,9,Notebook,1,3500.00,2024-07-10
+110,10,Mouse,xyz,80.5,2024-07-12
