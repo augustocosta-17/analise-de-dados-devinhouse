@@ -85,21 +85,21 @@ Este repositório documenta minha jornada de aprendizado durante o curso **DevIn
 ### [📂 Semana 02 - Fundamentos de Python](./modulo_01_programacao_e_modelagem_de_dados/semana_02)
 > Tipos de dados, estruturas condicionais, loops e programas interativos
 
-**Projetos Destaque:**
+**Exercícios Principais:**
 - 🌡️ Conversor de Temperatura
 - 🎲 Jogo de Adivinhação
 
 ### [📂 Semana 03 - Estruturas de Dados](./modulo_01_programacao_e_modelagem_de_dados/semana_03)
 > Listas, tuplas, dicionários e manipulação avançada
 
-**Projetos Destaque:**
+**Exercícios Principais:**
 - 📚 Sistema de Cadastro de Notas e Alunos
 - 🔄 Conversor Lista ↔ Dicionário
 
 ### [📂 Semana 04 - Funções e Arquivos](./modulo_01_programacao_e_modelagem_de_dados/semana_04)
 > Modularização, manipulação de CSV/JSON e datas
 
-**Projetos Destaque:**
+**Exercícios Principais:**
 - 🧮 Calculadora Modular
 - 📊 Sistema de Relatórios
 - 🧹 Limpeza de Dados
@@ -107,7 +107,7 @@ Este repositório documenta minha jornada de aprendizado durante o curso **DevIn
 ### [📂 Semana 05 - Integração e Análise](./modulo_01_programacao_e_modelagem_de_dados/semana_05)
 > Pandas, NumPy, análise integrada de dados
 
-**Projetos Destaque:**
+**Exercícios Principais:**
 - 📓 Notebook: Análise Completa com Pandas/NumPy
 - 📦 Sistema de Gestão de Estoque
 
@@ -133,7 +133,7 @@ Este repositório documenta minha jornada de aprendizado durante o curso **DevIn
 
 ---
 
-## 🏆 Projetos em Destaque
+## 🏆 Exercícios em Destaque
 
 ### 📊 [Análise de Dados com Pandas - Semana 5](./modulo_01_programacao_e_modelagem_de_dados/semana_05/Trello/devinhouse-semana5-notebook)
 ```
@@ -141,7 +141,7 @@ Este repositório documenta minha jornada de aprendizado durante o curso **DevIn
 🛠️ Stack: Python, Pandas, NumPy, Jupyter
 📈 Insights: Cliente top, ticket médio, análise geográfica
 ```
-[Ver projeto →](./modulo_01_programacao_e_modelagem_de_dados/semana_05/Trello/devinhouse-semana5-notebook)
+[Ver exercício →](./modulo_01_programacao_e_modelagem_de_dados/semana_05/Trello/devinhouse-semana5-notebook)
 
 ### 📚 [Sistema de Cadastro - Semana 3](./modulo_01_programacao_e_modelagem_de_dados/semana_03)
 ```
@@ -166,10 +166,11 @@ Este repositório documenta minha jornada de aprendizado durante o curso **DevIn
 | Métrica | Valor |
 |---------|-------|
 | 📝 **Exercícios Completos** | 50+ |
-| 📂 **Projetos** | 10+ |
+| � **Listas de Exercícios** | 12+ |
 | 💻 **Linhas de Código** | 1500+ |
 | 📖 **READMEs Documentados** | 8 |
 | ⏱️ **Horas de Estudo** | 100+ |
+| 🎯 **Projetos** | Em breve! |
 
 </div>
 
