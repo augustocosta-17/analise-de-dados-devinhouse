@@ -1,6 +1,6 @@
 from datetime import datetime
 
-data_input = input("Digite uma data (dd/mm/aaaa): ")
+data_input = input("\nDigite uma data (dd/mm/aaaa): ")
 
 try:
     data_usuario = datetime.strptime(data_input, "%d/%m/%Y")
@@ -12,7 +12,7 @@ try:
     
     print(f"\nData informada: {data_usuario.strftime('%d/%m/%Y')}")
     print(f"Dia da semana: {dia_semana}")
-    print(f"Dias restantes até o final do ano: {dias_restantes}")
+    print(f"Dias restantes até o final do ano: {dias_restantes}\n")
     
 except ValueError:
-    print("Erro: Data inválida. Use o formato dd/mm/aaaa")
+    print("Erro: Data inválida. Use o formato dd/mm/aaaa\n")

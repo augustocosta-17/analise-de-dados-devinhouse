@@ -44,7 +44,7 @@ Programa que converte temperaturas entre diferentes escalas (Celsius, Fahrenheit
 python conversor_de_temperatura.py
 ```
 
-> 💡 **Dica:** Adicione aqui screenshots da execução do programa!
+![Conversor de Temperatura - Execução](./screenshots/conversor_execucao.png)
 
 </details>
 
@@ -80,7 +80,7 @@ Jogo interativo onde o usuário tenta adivinhar um número gerado aleatoriamente
 python jogo_adivinhacao.py
 ```
 
-> 💡 **Dica:** Adicione aqui screenshots da execução do programa!
+![Jogo de Adivinhação - Execução](./screenshots/jogo_execucao.png)
 
 </details>
 
@@ -109,7 +109,7 @@ Programa que identifica e valida tipos de dados em Python.
 python verificador_de_tipo.py
 ```
 
-> 💡 **Dica:** Adicione aqui screenshots da execução do programa!
+![Verificador de Tipo - Execução](./screenshots/verificador_execucao.png)
 
 </details>
 

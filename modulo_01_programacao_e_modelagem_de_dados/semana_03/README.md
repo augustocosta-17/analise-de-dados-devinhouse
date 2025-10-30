@@ -38,7 +38,7 @@ Programa que converte estruturas de listas em dicionários organizados.
 python conversor_lista_dicionario.py
 ```
 
-> 💡 **Dica:** Adicione aqui screenshots da execução!
+![Conversos de Lista para Dicionário - Execução](./screenshots/conversor_execucao.png)
 
 </details>
 
@@ -77,7 +77,7 @@ Sistema completo para gerenciar cadastro de alunos e suas notas com operações 
 python desafio_sistema_cadastro_notas_e_alunos.py
 ```
 
-> 💡 **Dica:** Adicione aqui screenshots da execução!
+![Sistema de Cadastro de Notas e Alunos - Execução](./screenshots/desafio_execucao.png)
 
 </details>
 
@@ -104,7 +104,7 @@ Gerenciamento de notas de estudantes usando dicionários.
 python dicionario_notas.py
 ```
 
-> 💡 **Dica:** Adicione aqui screenshots da execução!
+![Dicionário de Notas - Execução](./screenshots/dicionario_execucao.png)
 
 </details>
 
@@ -132,7 +132,7 @@ Aplicação de filtros e buscas em estruturas de dicionários.
 python filtro_de_dicionario.py
 ```
 
-> 💡 **Dica:** Adicione aqui screenshots da execução!
+![Filtro de Dicionário - Execução](./screenshots/filtro_execucao.png)
 
 </details>
 
@@ -159,7 +159,7 @@ Sistema simples para gerenciar uma lista de compras.
 python lista_compras.py
 ```
 
-> 💡 **Dica:** Adicione aqui screenshots da execução!
+![Lista de Compras - Execução](./screenshots/lista_execucao.png)
 
 </details>
 
@@ -187,7 +187,7 @@ Programa para identificar e remover itens duplicados em listas.
 python remocao_duplicatas.py
 ```
 
-> 💡 **Dica:** Adicione aqui screenshots da execução!
+![Remoção de Duplicatas - Execução](./screenshots/remocao_execucao.png)
 
 </details>
 
@@ -215,7 +215,7 @@ Exploração das características e uso de tuplas.
 python tupla_imutavel.py
 ```
 
-> 💡 **Dica:** Adicione aqui screenshots da execução!
+![Tupla Imutável - Execução](./screenshots/tupla_execucao.png)
 
 </details>
 
