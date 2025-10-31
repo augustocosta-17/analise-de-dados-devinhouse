@@ -43,11 +43,11 @@ Este repositório documenta minha jornada de aprendizado durante o curso **DevIn
 </td>
 <td>
 
-**� Progresso Atual**
+**📊 Progresso Atual**
 - ✅ Módulo 01: Em andamento
-- 📝 Semanas completas: 5/45+
-- 💻 Exercícios: 50+
-- 📂 Projetos: 10+
+- 📝 Semanas completas: 6/45+
+- 💻 Exercícios: 60+
+- 📂 Projetos: 1 avaliativo
 
 </td>
 </tr>
@@ -111,6 +111,23 @@ Este repositório documenta minha jornada de aprendizado durante o curso **DevIn
 - 📓 Notebook: Análise Completa com Pandas/NumPy
 - 📦 Sistema de Gestão de Estoque
 
+### [📂 Semana 06 - Pandas e Tratamento de Dados](./modulo_01_programacao_e_modelagem_de_dados/semana_06)
+> Limpeza de dados, tratamento de nulos, outliers e normalização
+
+**Exercícios Principais:**
+- 🧹 Tratamento Completo de CSV (clientes e vendas)
+- 📊 Análise de Dados Excel (detecção de outliers via IQR)
+- 🔧 Normalização Min-Max Scaling
+
+### [🏥 Mini Projeto - Análise Healthcare Dataset](./modulo_01_programacao_e_modelagem_de_dados/Mini%20Projeto)
+> **Projeto Avaliativo:** Análise de 55.000+ registros hospitalares
+
+**Destaques:**
+- 📋 Dataset: 15 variáveis, período 2019-2024
+- 🧹 Limpeza: Estratégia inteligente de duplicatas
+- 🔍 Técnica IQR para detecção de outliers
+- 📊 Ambiente virtual isolado
+
 </details>
 
 <details>
@@ -165,12 +182,12 @@ Este repositório documenta minha jornada de aprendizado durante o curso **DevIn
 
 | Métrica | Valor |
 |---------|-------|
-| 📝 **Exercícios Completos** | 50+ |
-| � **Listas de Exercícios** | 12+ |
-| 💻 **Linhas de Código** | 1500+ |
-| 📖 **READMEs Documentados** | 8 |
-| ⏱️ **Horas de Estudo** | 100+ |
-| 🎯 **Projetos** | Em breve! |
+| 📝 **Exercícios Completos** | 60+ |
+| 📚 **Listas de Exercícios** | 14+ |
+| 💻 **Linhas de Código** | 2000+ |
+| 📖 **READMEs Documentados** | 10 |
+| ⏱️ **Horas de Estudo** | 120+ |
+| 🎯 **Projetos Avaliativos** | 1 (Mini Projeto) |
 
 </div>
 
@@ -206,3 +223,19 @@ Este repositório documenta minha jornada de aprendizado durante o curso **DevIn
 - 🤖 Machine Learning (próximos módulos)
 
 ---
+
+## 📬 Contato
+
+**Augusto César da Costa**
+
+📧 **Email:** augustoccostamg@gmail.com  
+💼 **LinkedIn:** [Augusto César da Costa](https://www.linkedin.com/in/augusto-c%C3%A9sar-da-costa-768516218)  
+🐙 **GitHub:** [@augustocosta-17](https://github.com/augustocosta-17)
+
+---
+
+<div align="center">
+
+⭐ **Gostou do repositório? Deixe uma estrela!** ⭐
+
+</div>

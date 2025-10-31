@@ -1,0 +1,331 @@
+═══════════════════════════════════════════════════════════════
+      GUIA COMPLETO DE ANÁLISE DE DADOS - PROCEDIMENTO PADRÃO
+═══════════════════════════════════════════════════════════════
+
+📌 FASE 1: IMPORTAÇÃO E CARREGAMENTO
+──────────────────────────────────────────────────────────────
+✓ Importar bibliotecas essenciais:
+  import pandas as pd
+  import numpy as np
+  import matplotlib.pyplot as plt
+  import seaborn as sns
+
+✓ Carregar o dataset:
+  df = pd.read_csv('arquivo.csv')
+  # Alternativas: pd.read_excel(), pd.read_json(), pd.read_sql()
+
+✓ Primeira visualização:
+  df.head()        # Primeiras 5 linhas
+  df.tail()        # Últimas 5 linhas
+  df.sample(10)    # 10 linhas aleatórias
+
+
+📌 FASE 2: EXPLORAÇÃO INICIAL
+──────────────────────────────────────────────────────────────
+✓ Estrutura do dataset:
+  df.shape         # (linhas, colunas)
+  df.columns       # Nome das colunas
+  df.dtypes        # Tipo de cada coluna
+  df.info()        # Resumo completo
+
+✓ Estatísticas descritivas:
+  df.describe()                    # Apenas numéricas
+  df.describe(include='all')       # Todas as colunas
+  df.describe(include='object')    # Apenas categóricas
+
+✓ Valores ausentes:
+  df.isnull().sum()                # Total de nulos por coluna
+  df.isnull().sum() / len(df)      # Percentual de nulos
+
+
+📌 FASE 3: LIMPEZA E TRATAMENTO
+──────────────────────────────────────────────────────────────
+✓ Tratar valores ausentes:
+  # Remover linhas com nulos
+  df.dropna()
+  df.dropna(subset=['coluna_importante'])
+  
+  # Preencher nulos
+  df.fillna(0)                                    # Com zero
+  df['coluna'].fillna(df['coluna'].mean())        # Com média
+  df['coluna'].fillna(df['coluna'].median())      # Com mediana
+  df['coluna'].fillna(df['coluna'].mode()[0])     # Com moda
+  df['coluna'].fillna(method='ffill')             # Forward fill
+  df['coluna'].fillna(method='bfill')             # Backward fill
+
+✓ Remover duplicatas:
+  # 1. INVESTIGAR ANTES DE REMOVER (SEMPRE!)
+  df.duplicated().sum()                                    # Contar duplicatas totais
+  df.duplicated(subset=['col1', 'col2']).sum()            # Duplicatas em colunas específicas
+  
+  # 2. VISUALIZAR duplicatas (incluindo originais)
+  duplicatas = df[df.duplicated(keep=False)]              # keep=False mostra TODAS as ocorrências
+  duplicatas_ordenadas = duplicatas.sort_values(by=list(df.columns))
+  
+  # 3. ANALISAR por combinação de colunas críticas
+  # Exemplo: Em dados médicos, verificar Nome + Data + Resultado do Teste
+  df.duplicated(subset=['Name', 'Date', 'Test_Result']).sum()
+  
+  # 4. ESTRATÉGIAS DE REMOÇÃO
+  # Opção A: Remover duplicatas COMPLETAS (todas as colunas iguais)
+  df_limpo = df.drop_duplicates(keep='first')             # Mantém primeira ocorrência
+  df_limpo = df.drop_duplicates(keep='last')              # Mantém última ocorrência
+  
+  # Opção B: Remover duplicatas em COLUNAS ESPECÍFICAS (mais seguro)
+  # Use quando pacientes/clientes podem ter múltiplas entradas legítimas
+  df_limpo = df.drop_duplicates(subset=['col1', 'col2', 'col3'], keep='first')
+  
+  # Opção C: Remover apenas se múltiplas colunas-chave forem idênticas
+  # Exemplo: Mesma pessoa + mesma data + mesmo resultado = duplicata verdadeira
+  df_limpo = df.drop_duplicates(subset=['id', 'date', 'result'], keep='first')
+
+✓ Converter tipos de dados:
+  df['coluna'] = pd.to_datetime(df['coluna'], errors='coerce')
+  df['coluna'] = df['coluna'].astype(int)
+  df['coluna'] = df['coluna'].astype(float)
+  df['coluna'] = df['coluna'].astype(str)
+
+✓ Padronizar textos:
+  df['coluna'] = df['coluna'].str.lower()       # Minúsculas
+  df['coluna'] = df['coluna'].str.upper()       # Maiúsculas
+  df['coluna'] = df['coluna'].str.title()       # Capitalize
+  df['coluna'] = df['coluna'].str.strip()       # Remover espaços
+
+✓ Tratar outliers:
+  # Identificar via IQR
+  Q1 = df['coluna'].quantile(0.25)
+  Q3 = df['coluna'].quantile(0.75)
+  IQR = Q3 - Q1
+  limite_inferior = Q1 - 1.5 * IQR
+  limite_superior = Q3 + 1.5 * IQR
+  
+  # Remover outliers
+  df = df[(df['coluna'] >= limite_inferior) & (df['coluna'] <= limite_superior)]
+
+
+📌 FASE 4: ENRIQUECIMENTO E FEATURE ENGINEERING
+──────────────────────────────────────────────────────────────
+✓ Criar novas colunas:
+  df['nova_coluna'] = df['col1'] + df['col2']
+  df['diferenca'] = df['data_fim'] - df['data_inicio']
+
+✓ Extrair informações de datas:
+  df['ano'] = df['data'].dt.year
+  df['mes'] = df['data'].dt.month
+  df['dia'] = df['data'].dt.day
+  df['dia_semana'] = df['data'].dt.dayofweek
+  df['nome_mes'] = df['data'].dt.month_name()
+
+✓ Categorizar valores contínuos:
+  df['faixa'] = pd.cut(df['coluna'], bins=[0, 18, 40, 60, 100], 
+                       labels=['Jovem', 'Adulto', 'Meia-idade', 'Idoso'])
+  
+  df['categoria'] = pd.qcut(df['coluna'], q=4, 
+                            labels=['Baixo', 'Médio', 'Alto', 'Muito Alto'])
+
+✓ Aplicar funções:
+  df['nova'] = df['coluna'].apply(lambda x: x * 2)
+  df['nova'] = df.apply(lambda row: row['col1'] + row['col2'], axis=1)
+
+
+📌 FASE 5: ANÁLISE EXPLORATÓRIA (EDA)
+──────────────────────────────────────────────────────────────
+✓ Variáveis categóricas:
+  df['coluna'].value_counts()                    # Contagem
+  df['coluna'].value_counts(normalize=True)      # Percentual
+  df.groupby('categoria')['valor'].count()       # Agrupar
+
+✓ Variáveis numéricas:
+  df['coluna'].mean()          # Média
+  df['coluna'].median()        # Mediana
+  df['coluna'].std()           # Desvio padrão
+  df['coluna'].min()           # Mínimo
+  df['coluna'].max()           # Máximo
+  df['coluna'].quantile(0.95)  # Percentil 95
+
+✓ Análises cruzadas:
+  df.groupby('categoria')['valor'].mean()
+  df.groupby(['cat1', 'cat2'])['valor'].sum()
+  df.pivot_table(values='valor', index='linha', columns='coluna', aggfunc='mean')
+  pd.crosstab(df['col1'], df['col2'])
+
+✓ Correlações:
+  df.corr()                              # Correlação entre numéricas
+  df['col1'].corr(df['col2'])           # Correlação específica
+
+
+📌 FASE 6: VISUALIZAÇÕES
+──────────────────────────────────────────────────────────────
+✓ Configurações iniciais:
+  plt.style.use('seaborn-v0_8')
+  sns.set_palette("husl")
+  plt.rcParams['figure.figsize'] = (12, 6)
+
+✓ Gráficos de distribuição:
+  # Histograma
+  plt.hist(df['coluna'], bins=30)
+  df['coluna'].hist()
+  
+  # KDE (Densidade)
+  sns.kdeplot(df['coluna'])
+  
+  # Box plot
+  sns.boxplot(x='categoria', y='valor', data=df)
+  
+  # Violin plot
+  sns.violinplot(x='categoria', y='valor', data=df)
+
+✓ Gráficos de contagem:
+  # Barras
+  df['coluna'].value_counts().plot(kind='bar')
+  sns.countplot(x='coluna', data=df)
+  
+  # Barras horizontais
+  df['coluna'].value_counts().plot(kind='barh')
+  
+  # Pizza
+  df['coluna'].value_counts().plot(kind='pie', autopct='%1.1f%%')
+
+✓ Gráficos de relação:
+  # Scatter plot
+  plt.scatter(df['x'], df['y'])
+  sns.scatterplot(x='x', y='y', data=df)
+  
+  # Linha
+  plt.plot(df['x'], df['y'])
+  df.plot(x='data', y='valor', kind='line')
+  
+  # Regressão
+  sns.regplot(x='x', y='y', data=df)
+
+✓ Gráficos multivariados:
+  # Pairplot
+  sns.pairplot(df)
+  
+  # Heatmap de correlação
+  sns.heatmap(df.corr(), annot=True, cmap='coolwarm', fmt='.2f')
+  
+  # Facet grid
+  g = sns.FacetGrid(df, col='categoria', row='tipo')
+  g.map(plt.hist, 'valor')
+
+✓ Sempre adicionar:
+  plt.title('Título do Gráfico')
+  plt.xlabel('Eixo X')
+  plt.ylabel('Eixo Y')
+  plt.tight_layout()
+  plt.show()
+
+
+📌 FASE 7: INSIGHTS E CONCLUSÕES
+──────────────────────────────────────────────────────────────
+✓ Estrutura do relatório:
+  1. Resumo executivo (principais descobertas)
+  2. Metodologia (como foi feito)
+  3. Análise detalhada (resultados por tópico)
+  4. Insights principais (5-10 pontos)
+  5. Recomendações práticas
+  6. Limitações do estudo
+  7. Próximos passos
+
+✓ Perguntas a responder:
+  • Qual é o principal padrão encontrado?
+  • Existem anomalias ou valores inesperados?
+  • Há correlações significativas?
+  • Quais variáveis têm maior impacto?
+  • O que isso significa para o negócio?
+
+✓ Exportar resultados:
+  df.to_csv('dataset_tratado.csv', index=False)
+  df.to_excel('relatorio.xlsx', sheet_name='Dados')
+  df.to_json('dados.json')
+
+
+═══════════════════════════════════════════════════════════════
+💡 BOAS PRÁTICAS GERAIS
+═══════════════════════════════════════════════════════════════
+✓ Organização:
+  • Separe o código em células lógicas
+  • Use markdown para documentar cada etapa
+  • Crie índice com links de navegação
+  • Nomeie variáveis de forma clara
+
+✓ Código limpo:
+  • Use comentários explicativos
+  • Evite linhas muito longas (máx 79 caracteres)
+  • Siga PEP 8 (padrão Python)
+  • Teste cada célula antes de avançar
+
+✓ Visualizações:
+  • Use paleta de cores consistente
+  • Títulos e labels sempre presentes
+  • Legendas quando necessário
+  • Tamanho adequado para leitura
+  • Salve gráficos importantes: plt.savefig('grafico.png', dpi=300)
+
+✓ Performance:
+  • Use .copy() ao criar novos dataframes
+  • Prefira operações vetorizadas ao invés de loops
+  • Use .inplace=True quando apropriado
+  • Libere memória: del variavel_grande
+
+✓ Reprodutibilidade:
+  • Defina random_state quando usar aleatoriedade
+  • Documente versões das bibliotecas
+  • Salve dados intermediários importantes
+  • Crie requirements.txt
+
+
+═══════════════════════════════════════════════════════════════
+🔧 COMANDOS ÚTEIS - CHEAT SHEET
+═══════════════════════════════════════════════════════════════
+# Visualização rápida
+df.head(n)           df.tail(n)           df.sample(n)
+df.shape             df.columns           df.dtypes
+df.info()            df.describe()        df.memory_usage()
+
+# Seleção
+df['coluna']                              df[['col1', 'col2']]
+df.loc[linha, coluna]                     df.iloc[indice]
+df[df['coluna'] > 10]                     df.query('coluna > 10')
+
+# Agregação
+df.groupby('col').sum()                   df.groupby('col').mean()
+df.groupby('col').agg(['sum', 'mean'])    df.pivot_table()
+
+# Ordenação
+df.sort_values('coluna')                  df.sort_values(['col1', 'col2'])
+df.sort_index()                           df.nlargest(n, 'coluna')
+
+# Renomear
+df.rename(columns={'old': 'new'})         df.columns = ['novo1', 'novo2']
+
+# Remover
+df.drop('coluna', axis=1)                 df.drop([0, 1, 2], axis=0)
+df.drop_duplicates()                      df.dropna()
+
+═══════════════════════════════════════════════════════════════
+🎯 FLUXO PADRÃO RECOMENDADO
+═══════════════════════════════════════════════════════════════
+1. Importação de bibliotecas
+2. Carregamento dos dados
+3. Exploração inicial (shape, info, describe)
+4. Identificação de problemas (nulos, duplicatas, outliers)
+5. Limpeza e tratamento
+6. Feature engineering
+7. Análise exploratória univariada
+8. Análise exploratória bivariada/multivariada
+9. Visualizações
+10. Insights e conclusões
+11. Exportação de resultados
+
+═══════════════════════════════════════════════════════════════
+📚 RECURSOS ADICIONAIS
+═══════════════════════════════════════════════════════════════
+Documentação:
+• pandas: https://pandas.pydata.org/docs/
+• matplotlib: https://matplotlib.org/stable/contents.html
+• seaborn: https://seaborn.pydata.org/
+• numpy: https://numpy.org/doc/
+
+Dica: Use help(funcao) ou funcao? no Jupyter para ver documentação

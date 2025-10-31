@@ -36,17 +36,25 @@ Modularização, funções, parâmetros, retornos e manipulação de arquivos CS
 Integração de múltiplos arquivos, análise de dados e introdução ao Pandas e NumPy.
 
 ### [📂 Semana 06 - Pandas e Tratamento de Dados](./semana_06)
-Leitura de dados CSV, identificação e tratamento de valores ausentes, limpeza de dados.
+Leitura de dados CSV/Excel, identificação e tratamento de valores ausentes, detecção de outliers via IQR, limpeza e normalização de dados.
+
+### [🏥 Mini Projeto - Análise Healthcare Dataset](./Mini%20Projeto)
+**Projeto Avaliativo:** Análise completa de dados hospitalares com 55.000+ registros, aplicando todas as técnicas aprendidas no módulo (limpeza, tratamento, análise exploratória e visualização).
 
 ## 🚀 Habilidades Desenvolvidas
 ✅ Programação estruturada em Python  
 ✅ Manipulação de estruturas de dados  
-✅ Leitura e escrita de arquivos  
+✅ Leitura e escrita de arquivos (CSV, JSON, Excel)  
 ✅ Modularização e organização de código  
 ✅ Resolução de problemas com lógica de programação  
 ✅ Limpeza e transformação de dados  
-✅ Introdução ao Pandas e NumPy para análise de dados  
-✅ Trabalho com Jupyter Notebooks  
+✅ Tratamento de valores nulos e duplicatas  
+✅ Detecção de outliers (método IQR)  
+✅ Normalização de dados (Min-Max Scaling)  
+✅ Análise exploratória de dados (EDA)  
+✅ Trabalho com Pandas e NumPy  
+✅ Desenvolvimento em Jupyter Notebooks  
+✅ Pensamento crítico e tomada de decisões baseadas em dados  
 
 ---
 
