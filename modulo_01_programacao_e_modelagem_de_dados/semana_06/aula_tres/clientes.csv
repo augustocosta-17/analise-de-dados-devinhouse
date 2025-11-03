@@ -1,0 +1,11 @@
+id,nome,idade,email,cidade,estado
+1,Ana Souza,25,ana.souza@email.com,Fortaleza,CE
+2,João Silva,,joaosilva@email,Recife,PE
+3,Carla Dias,31,,São Paulo,SP
+4,Pedro Santos,28,pedro.santos@email.com,Fortaleza,CE
+5,Ana Souza,25,ana.souza@email.com,Fortaleza,CE
+6,Lucas Lima,22,lucas.lima@email.com,,SP
+7,Maria Fernanda,abc,maria.fernanda@email.com,Rio de Janeiro,RJ
+8,,19,,Belo Horizonte,MG
+9,Beatriz Alves,27,beatriz.alves@email.com,Fortaleza,CE
+10,José Almeida,35,jose.almeida@email.com,Salvador,BA

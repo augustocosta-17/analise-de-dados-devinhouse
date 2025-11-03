@@ -15,7 +15,10 @@ Nesta semana aprofundei o conhecimento em Pandas, focando em leitura de dados, i
 - **Python 3.14.0**
 - **Pandas 2.3.3** - Manipulação e análise de dados
 - **NumPy 2.3.4** - Computação numérica
-- **CSV** - Arquivos de dados estruturados
+- **Matplotlib 3.10.7** - Visualização de dados
+- **Seaborn 0.13.2** - Visualização estatística
+- **OpenPyXL 3.1.5** - Leitura de arquivos Excel
+- **IPyKernel 7.1.0** - Kernel Jupyter para notebooks
 
 ## 📁 Estrutura da Semana
 ```
@@ -27,7 +30,13 @@ semana_06/
 ├── aula_dois/
 │   ├── main.py          # Análise de dados Excel
 │   └── dataset_clamed.xlsx  # Dataset de produtos
+├── aula_tres/
+│   ├── visualizacao_seaborn.py      # Visualização de dados com Seaborn
+│   ├── visualizacao_matplotlib.ipynb # Notebook com Matplotlib
+│   ├── clientes.csv     # Dataset de clientes
+│   └── vendas.csv       # Dataset de vendas
 ├── venv/                # Ambiente virtual Python
+├── requirements.txt     # Dependências do projeto
 └── README.md
 ```
 
@@ -127,9 +136,59 @@ outliers = df[(df['preco'] < limite_inferior) | (df['preco'] > limite_superior)]
 
 ---
 
+### Aula 03 - Visualização de Dados
+**Arquivos:** `aula_tres/visualizacao_seaborn.py`, `visualizacao_matplotlib.ipynb`
+
+#### Técnicas Implementadas:
+
+**1. Preparação dos Dados**
+- Reutilização do pipeline de limpeza da Aula 01
+- Junção de DataFrames com `pd.merge()`
+- Normalização de idade e preço unitário
+
+**2. Bibliotecas de Visualização**
+```python
+import matplotlib.pyplot as plt
+import seaborn as sns
+```
+
+**3. Tipos de Gráficos Disponíveis**
+
+**Scatter Plot (Dispersão)**
+- Correlação entre idade e preço unitário
+- Identificação de padrões de compra
+
+**Histograma**
+- Distribuição de preços
+- Frequência de valores
+
+**Box Plot**
+- Comparação de preços por faixa etária
+- Identificação de outliers visuais
+
+**Line Plot (Linha)**
+- Evolução de vendas ao longo do tempo
+- Tendências temporais
+
+**Heatmap**
+- Matriz de correlação entre variáveis
+- Intensidade de relações
+
+**Bar Plot (Barras)**
+- Top clientes por quantidade comprada
+- Comparações categóricas
+
+**4. Configuração do Notebook**
+```python
+# Kernel registrado: Python (semana_06)
+# Ambiente virtual com todas as dependências
+```
+
+---
+
 ## 📊 Datasets Utilizados
 
-### Aula 01:
+### Aula 01 & 03:
 - **clientes.csv**: Dados de clientes (id, nome, idade, email, cidade, estado)
 - **vendas.csv**: Dados de vendas (id_venda, id_cliente, produto, quantidade, preco_unitario, data_venda)
 
@@ -145,7 +204,12 @@ python -m venv venv
 .\venv\Scripts\Activate.ps1
 
 # Instalar dependências
-pip install pandas numpy openpyxl
+pip install -r requirements.txt
+# ou
+pip install pandas numpy matplotlib seaborn openpyxl ipykernel
+
+# Registrar kernel Jupyter
+python -m ipykernel install --user --name=semana_06 --display-name="Python (semana_06)"
 ```
 
 ## ✅ Habilidades Desenvolvidas
@@ -173,7 +237,36 @@ pip install pandas numpy openpyxl
 ✅ Pandas para manipulação de DataFrames  
 ✅ NumPy para operações numéricas  
 ✅ OpenPyXL para leitura de Excel  
+✅ Matplotlib para visualização de dados  
+✅ Seaborn para visualização estatística  
+✅ IPyKernel para notebooks Jupyter  
 ✅ Regex para limpeza de strings  
+
+### Visualização de Dados:
+✅ Gráficos de dispersão (scatter plot)  
+✅ Histogramas de distribuição  
+✅ Box plots para comparação  
+✅ Gráficos de linha temporal  
+✅ Heatmaps de correlação  
+✅ Gráficos de barras  
+✅ Jupyter Notebooks interativos  
+
+---
+
+## 🎨 Observações Importantes
+
+### ⚠️ Conflito de Nomes
+Evite nomear arquivos Python com o mesmo nome de bibliotecas que você está importando:
+- ❌ `seaborn.py` (conflita com `import seaborn`)
+- ✅ `visualizacao_seaborn.py` (correto)
+
+### 🐍 Ambientes Virtuais
+Sempre execute seus scripts usando o Python do ambiente virtual:
+```powershell
+.\venv\Scripts\python.exe seu_arquivo.py
+```
+
+Ou configure o interpretador correto no VS Code para evitar `ModuleNotFoundError`.
 
 ---
 
