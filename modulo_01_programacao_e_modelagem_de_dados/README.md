@@ -38,6 +38,9 @@ Integração de múltiplos arquivos, análise de dados e introdução ao Pandas 
 ### [📂 Semana 06 - Pandas e Tratamento de Dados](./semana_06)
 Leitura de dados CSV/Excel, identificação e tratamento de valores ausentes, detecção de outliers via IQR, limpeza e normalização de dados.
 
+### [📂 Semana 07 - Em Desenvolvimento](./semana_07)
+Conteúdo em andamento - aguardando material do curso.
+
 ### [🏥 Mini Projeto - Análise Healthcare Dataset](./Mini%20Projeto)
 **Projeto Avaliativo:** Análise completa de dados hospitalares com 55.000+ registros, aplicando todas as técnicas aprendidas no módulo (limpeza, tratamento, análise exploratória e visualização).
 

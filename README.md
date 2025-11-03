@@ -45,9 +45,9 @@ Este repositório documenta minha jornada de aprendizado durante o curso **DevIn
 
 **📊 Progresso Atual**
 - ✅ Módulo 01: Em andamento
-- 📝 Semanas completas: 6/45+
+- 📝 Semana atual: 07
 - 💻 Exercícios: 60+
-- 📂 Projetos: 1 avaliativo
+- 📂 Projetos: 1 avaliativo (em desenvolvimento)
 
 </td>
 </tr>
@@ -119,6 +119,11 @@ Este repositório documenta minha jornada de aprendizado durante o curso **DevIn
 - 📊 Análise de Dados Excel (detecção de outliers via IQR)
 - 🔧 Normalização Min-Max Scaling
 
+### [📂 Semana 07 - Em Desenvolvimento](./modulo_01_programacao_e_modelagem_de_dados/semana_07)
+> Conteúdo da semana atual - aguardando material
+
+**Status:** 🚧 Em andamento
+
 ### [🏥 Mini Projeto - Análise Healthcare Dataset](./modulo_01_programacao_e_modelagem_de_dados/Mini%20Projeto)
 > **Projeto Avaliativo:** Análise de 55.000+ registros hospitalares
 
@@ -127,6 +132,7 @@ Este repositório documenta minha jornada de aprendizado durante o curso **DevIn
 - 🧹 Limpeza: Estratégia inteligente de duplicatas
 - 🔍 Técnica IQR para detecção de outliers
 - 📊 Ambiente virtual isolado
+- 🚧 Status: Fase 3 concluída (Limpeza)
 
 </details>
 
