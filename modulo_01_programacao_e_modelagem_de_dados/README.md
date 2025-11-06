@@ -38,18 +38,22 @@ Integração de múltiplos arquivos, análise de dados e introdução ao Pandas 
 ### [📂 Semana 06 - Pandas e Tratamento de Dados](./semana_06)
 Leitura de dados CSV/Excel, identificação e tratamento de valores ausentes, detecção de outliers via IQR, limpeza e normalização de dados.
 
-### [📂 Semana 07 - Em Desenvolvimento](./semana_07)
-Conteúdo em andamento - aguardando material do curso.
+### [📂 Semana 07 - Modelagem de Dados e SQL](./semana_07)
+Modelagem de banco de dados relacional, normalização, diagramas entidade-relacionamento (ER) e design de esquemas relacionais.
 
 ### [🏥 Mini Projeto - Análise Healthcare Dataset](./Mini%20Projeto)
 **Projeto Avaliativo:** Análise completa de dados hospitalares com 55.000+ registros, aplicando todas as técnicas aprendidas no módulo (limpeza, tratamento, análise exploratória e visualização).
 
 ## 🚀 Habilidades Desenvolvidas
+
+### Programação:
 ✅ Programação estruturada em Python  
 ✅ Manipulação de estruturas de dados  
 ✅ Leitura e escrita de arquivos (CSV, JSON, Excel)  
 ✅ Modularização e organização de código  
 ✅ Resolução de problemas com lógica de programação  
+
+### Análise de Dados:
 ✅ Limpeza e transformação de dados  
 ✅ Tratamento de valores nulos e duplicatas  
 ✅ Detecção de outliers (método IQR)  
@@ -57,7 +61,23 @@ Conteúdo em andamento - aguardando material do curso.
 ✅ Análise exploratória de dados (EDA)  
 ✅ Trabalho com Pandas e NumPy  
 ✅ Desenvolvimento em Jupyter Notebooks  
+
+### Visualização:
+✅ Gráficos com Matplotlib e Seaborn  
+✅ Histogramas, scatter plots, box plots  
+✅ Heatmaps de correlação  
+✅ Análise visual de dados  
+
+### Modelagem de Dados:
+✅ Modelagem entidade-relacionamento (ER)  
+✅ Normalização de banco de dados (1FN, 2FN, 3FN)  
+✅ Design de esquemas relacionais  
+✅ Definição de chaves e relacionamentos  
+
+### Soft Skills:
 ✅ Pensamento crítico e tomada de decisões baseadas em dados  
+✅ Documentação técnica completa  
+✅ Gestão de projetos com Git/GitHub  
 
 ---
 

@@ -24,6 +24,10 @@ Nesta semana aprendemos sobre modelagem de banco de dados, focando em estruturas
 semana_07/
 ├── aula_um/
 │   └── Modelo_E-commerce.png   # Exemplo de diagrama ER (demonstração em aula)
+├── aula_dois/
+│   ├── Conceitual_2.brM3       # Modelo conceitual no BrModelo
+│   ├── image.png               # Exportação do diagrama ER
+│   └── Captura de tela...png   # Screenshot do modelo
 ├── venv/                       # Ambiente virtual Python
 ├── requirements.txt            # Dependências do projeto
 └── README.md
@@ -72,6 +76,30 @@ semana_07/
 - Representação visual do modelo de dados
 - Notações padrão (Chen, Crow's Foot, UML)
 - Identificação de entidades, atributos e relacionamentos
+
+---
+
+### Aula 02 - Prática de Modelagem com BrModelo
+**Arquivos:** `aula_dois/Conceitual_2.brM3`, `aula_dois/image.png`
+
+#### Ferramenta de Modelagem:
+
+**BrModelo - Ferramenta CASE**
+- Software nacional para modelagem de dados
+- Criação de diagramas conceituais, lógicos e físicos
+- Exportação de modelos para SQL
+- Interface intuitiva para design de banco de dados
+
+**Atividade Prática:**
+- Criação de modelo conceitual personalizado
+- Definição de entidades e relacionamentos específicos
+- Aplicação de cardinalidade e normalização
+- Exportação e documentação do modelo
+
+**Entregáveis:**
+- Arquivo `.brM3` com modelo conceitual
+- Diagramas exportados em formato de imagem
+- Screenshots do processo de modelagem
 
 ---
 
@@ -138,6 +166,12 @@ python -m ipykernel install --user --name=semana_07 --display-name="Python (sema
 ✅ Definição de relacionamentos complexos  
 ✅ Aplicação de técnicas de normalização  
 ✅ Criação de modelos escaláveis e consistentes  
+
+### Ferramentas:
+✅ BrModelo para criação de diagramas ER  
+✅ Exportação de modelos para SQL  
+✅ Documentação visual de estruturas de dados  
+✅ Versionamento de modelos conceituais  
 
 ---
 
