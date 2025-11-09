@@ -41,3 +41,9 @@ SISTEMA-BACKUP/
 # Arquivos de configuração específicos
 CONFIGURAR-INICIAL.bat
 FAZER-BACKUP.bat
+
+# Scripts de configuração de ambiente
+**/recriar-venv.ps1
+**/configurar-venv.ps1
+**/CONFIGURAR-VENV.bat
+**/ATIVAR-VENV.bat
