@@ -46,7 +46,7 @@ Este repositório documenta minha jornada de aprendizado durante o curso **DevIn
 - ✅ Módulo 01: Em andamento
 - 📝 Semana atual: 07
 - 💻 Exercícios: 60+
-- 📂 Projetos: 1 avaliativo (em desenvolvimento)
+- 📂 Projetos: 1 avaliativo (✅ concluído)
 
 </td>
 </tr>
@@ -118,20 +118,24 @@ Este repositório documenta minha jornada de aprendizado durante o curso **DevIn
 - 📊 Análise de Dados Excel (detecção de outliers via IQR)
 - 🔧 Normalização Min-Max Scaling
 
-### [📂 Semana 07 - Em Desenvolvimento](./modulo_01_programacao_e_modelagem_de_dados/semana_07)
-> Conteúdo da semana atual - aguardando material
+### [📂 Semana 07 - Modelagem de Dados e SQL](./modulo_01_programacao_e_modelagem_de_dados/semana_07)
+> Modelagem de banco de dados relacional, diagramas ER e BrModelo
 
-**Status:** 🚧 Em andamento
+**Exercícios Principais:**
+- 📐 Modelagem conceitual com BrModelo (diagrama biblioteca/livros)
+- 🗃️ Normalização de dados
+- � Diagramas Entidade-Relacionamento
 
 ### [🏥 Mini Projeto - Análise Healthcare Dataset](./modulo_01_programacao_e_modelagem_de_dados/Mini%20Projeto)
-> **Projeto Avaliativo:** Análise de 55.000+ registros hospitalares
+> **Projeto Avaliativo:** Análise completa de dados hospitalares - ✅ **CONCLUÍDO**
 
 **Destaques:**
-- 📋 Dataset: 15 variáveis, período 2019-2024
-- 🧹 Limpeza: Estratégia inteligente de duplicatas
+- 📋 Dataset: 15 variáveis, 55.000+ registros, período 2019-2024
+- 🧹 Limpeza: Estratégia inteligente de duplicatas + padronização de hospitais
 - 🔍 Técnica IQR para detecção de outliers
-- 📊 Ambiente virtual isolado
-- 🚧 Status: Fase 3 concluída (Limpeza)
+- � Feature Engineering: grupos etários, dias internação, custo diário
+- 📊 3 visualizações profissionais (custos e distribuição hospitalar)
+- � Relatório final com insights, padrões e hipóteses
 
 </details>
 

@@ -42,7 +42,7 @@ Leitura de dados CSV/Excel, identificação e tratamento de valores ausentes, de
 Modelagem de banco de dados relacional, normalização, diagramas entidade-relacionamento (ER) e design de esquemas relacionais.
 
 ### [🏥 Mini Projeto - Análise Healthcare Dataset](./Mini%20Projeto)
-**Projeto Avaliativo:** Análise completa de dados hospitalares com 55.000+ registros, aplicando todas as técnicas aprendidas no módulo (limpeza, tratamento, análise exploratória e visualização).
+**Projeto Avaliativo - ✅ CONCLUÍDO:** Análise completa de dados hospitalares com 55.000+ registros, aplicando todas as técnicas aprendidas no módulo (limpeza, tratamento, feature engineering, análise exploratória, visualizações e relatório final).
 
 ## 🚀 Habilidades Desenvolvidas
 
