@@ -11,7 +11,6 @@
 
 [![Status](https://img.shields.io/badge/Status-Em_Desenvolvimento-yellow?style=flat-square)](https://github.com/augustocosta-17/analise-de-dados-devinhouse)
 [![Commits](https://img.shields.io/github/commit-activity/m/augustocosta-17/analise-de-dados-devinhouse?style=flat-square)](https://github.com/augustocosta-17/analise-de-dados-devinhouse/commits/main)
-[![Last Commit](https://img.shields.io/github/last-commit/augustocosta-17/analise-de-dados-devinhouse?style=flat-square)](https://github.com/augustocosta-17/analise-de-dados-devinhouse)
 
 </div>
 
