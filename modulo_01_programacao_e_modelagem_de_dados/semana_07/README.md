@@ -28,6 +28,8 @@ semana_07/
 │   ├── Conceitual_2.brM3       # Modelo conceitual no BrModelo
 │   ├── image.png               # Exportação do diagrama ER
 │   └── Captura de tela...png   # Screenshot do modelo
+├── Trello/
+│   └── image.png               # Exercício de modelagem Trello
 ├── venv/                       # Ambiente virtual Python
 ├── requirements.txt            # Dependências do projeto
 └── README.md
@@ -100,6 +102,23 @@ semana_07/
 - Arquivo `.brM3` com modelo conceitual
 - Diagramas exportados em formato de imagem
 - Screenshots do processo de modelagem
+
+---
+
+### Trello - Exercício Prático de Modelagem
+**Arquivos:** `Trello/image.png`
+
+#### Exercício Complementar:
+
+**Objetivo:**
+- Aplicar os conceitos de modelagem aprendidos
+- Criar diagrama ER para cenário proposto
+- Praticar identificação de entidades e relacionamentos
+
+**Conteúdo:**
+- Modelo de dados elaborado conforme exercício Trello
+- Aplicação prática dos conceitos de normalização
+- Definição de cardinalidade e chaves
 
 ---
 
