@@ -1,0 +1,7 @@
+# Semana 08 - SQL e Banco de Dados
+pandas>=2.3.0
+numpy>=2.3.0
+matplotlib>=3.10.0
+seaborn>=0.13.2
+notebook>=7.4.0
+ipykernel>=7.1.0
