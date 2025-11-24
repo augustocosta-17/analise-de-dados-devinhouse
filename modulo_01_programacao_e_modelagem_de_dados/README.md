@@ -41,8 +41,8 @@ Leitura de dados CSV/Excel, identificação e tratamento de valores ausentes, de
 ### [📂 Semana 07 - Modelagem de Dados e SQL](./semana_07)
 Modelagem de banco de dados relacional, normalização, diagramas entidade-relacionamento (ER) e design de esquemas relacionais.
 
-### [📂 Semana 08](./semana_08)
-*Conteúdo a ser definido*
+### [📂 Semana 08 - Modelagem NoSQL e SQL Essencial](./semana_08)
+Modelagem não relacional (Documentos, Grafos, Colunas, Chave-Valor), normalização relacional (1FN, 2FN, 3FN) e comandos SQL essenciais (DDL + DML).
 
 ### [🏥 Mini Projeto - Análise Healthcare Dataset](./Mini%20Projeto)
 **Projeto Avaliativo - ✅ CONCLUÍDO:** Análise completa de dados hospitalares com 55.000+ registros, aplicando todas as técnicas aprendidas no módulo (limpeza, tratamento, feature engineering, análise exploratória, visualizações e relatório final).
@@ -76,6 +76,16 @@ Modelagem de banco de dados relacional, normalização, diagramas entidade-relac
 ✅ Normalização de banco de dados (1FN, 2FN, 3FN)  
 ✅ Design de esquemas relacionais  
 ✅ Definição de chaves e relacionamentos  
+✅ Conceitos de modelagem NoSQL  
+✅ Tipos de bancos não relacionais (Documentos, Grafos, Colunas, Chave-Valor)  
+
+### SQL e Banco de Dados:
+✅ DDL - CREATE TABLE, ALTER TABLE, DROP TABLE  
+✅ DML - INSERT, UPDATE, DELETE  
+✅ Consultas SQL - SELECT, WHERE, ORDER BY  
+✅ Operadores lógicos e filtros (AND, OR, NOT, BETWEEN, IN, LIKE)  
+✅ Chaves primárias e estrangeiras  
+✅ Integridade referencial  
 
 ### Soft Skills:
 ✅ Pensamento crítico e tomada de decisões baseadas em dados  
