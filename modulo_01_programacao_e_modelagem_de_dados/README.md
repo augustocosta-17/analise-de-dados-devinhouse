@@ -44,6 +44,9 @@ Modelagem de banco de dados relacional, normalização, diagramas entidade-relac
 ### [📂 Semana 08 - Modelagem NoSQL e SQL Essencial](./semana_08)
 Modelagem não relacional (Documentos, Grafos, Colunas, Chave-Valor), normalização relacional (1FN, 2FN, 3FN) e comandos SQL essenciais (DDL + DML).
 
+### [📂 Semana 09 - SQL Avançado](./semana_09)
+JOINs (INNER, LEFT, RIGHT, FULL OUTER), agregações com GROUP BY, DISTINCT, HAVING, subconsultas, CTEs, funções de data/texto e criação de Views.
+
 ### [🏥 Mini Projeto - Análise Healthcare Dataset](./Mini%20Projeto)
 **Projeto Avaliativo - ✅ CONCLUÍDO:** Análise completa de dados hospitalares com 55.000+ registros, aplicando todas as técnicas aprendidas no módulo (limpeza, tratamento, feature engineering, análise exploratória, visualizações e relatório final).
 
@@ -86,6 +89,12 @@ Modelagem não relacional (Documentos, Grafos, Colunas, Chave-Valor), normaliza�
 ✅ Operadores lógicos e filtros (AND, OR, NOT, BETWEEN, IN, LIKE)  
 ✅ Chaves primárias e estrangeiras  
 ✅ Integridade referencial  
+✅ JOINs - INNER, LEFT, RIGHT, FULL OUTER  
+✅ Agregações - GROUP BY, SUM, COUNT, AVG, MAX, MIN  
+✅ DISTINCT e HAVING  
+✅ Subconsultas e CTEs (Common Table Expressions)  
+✅ Funções de data e texto (YEAR, MONTH, QUARTER, CONCAT, SUBSTRING)  
+✅ Criação e gerenciamento de Views  
 
 ### Soft Skills:
 ✅ Pensamento crítico e tomada de decisões baseadas em dados  
