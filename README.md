@@ -44,8 +44,8 @@ Este repositório documenta minha jornada de aprendizado durante o curso **DevIn
 
 **📊 Progresso Atual**
 - ✅ Módulo 01: Em andamento
-- 📝 Semana atual: 08
-- 💻 Exercícios: 65+
+- 📝 Semana atual: 09
+- 💻 Exercícios: 70+
 - 📂 Projetos: 1 avaliativo (✅ concluído)
 
 </td>
@@ -134,6 +134,17 @@ Este repositório documenta minha jornada de aprendizado durante o curso **DevIn
 - 🏗️ DDL: CREATE, ALTER, DROP TABLE
 - ✏️ DML: INSERT, UPDATE, DELETE
 - 🔍 Consultas SQL com filtros e ordenação
+
+### [📂 Semana 09 - SQL Avançado](./modulo_01_programacao_e_modelagem_de_dados/semana_09)
+> JOINs, agregações, subconsultas, CTEs, funções de data/texto e Views
+
+**Exercícios Principais:**
+- 🔗 JOINs (INNER, LEFT, RIGHT, FULL OUTER)
+- 📊 Agregações com GROUP BY, SUM, COUNT, AVG
+- 🔍 DISTINCT e HAVING
+- 🧩 Subconsultas e CTEs (Common Table Expressions)
+- 📅 Funções de data e texto (MONTH, YEAR, CONCAT, SUBSTRING)
+- 👁️ Criação e gerenciamento de Views
 
 ---
 
@@ -237,11 +248,11 @@ Python | Pandas | NumPy | Matplotlib | Seaborn | Jupyter Notebook
 
 | Métrica | Valor |
 |---------|-------|
-| 📝 **Exercícios Completos** | 65+ |
-| 📚 **Listas de Exercícios** | 16+ |
-| 💻 **Linhas de Código** | 2500+ |
-| 📖 **READMEs Documentados** | 12 |
-| ⏱️ **Horas de Estudo** | 140+ |
+| 📝 **Exercícios Completos** | 70+ |
+| 📚 **Listas de Exercícios** | 17+ |
+| 💻 **Linhas de Código** | 3000+ |
+| 📖 **READMEs Documentados** | 13 |
+| ⏱️ **Horas de Estudo** | 160+ |
 | 🎯 **Projetos Avaliativos** | 1 (Mini Projeto ✅) |
 
 </div>
