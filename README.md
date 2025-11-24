@@ -44,8 +44,8 @@ Este repositório documenta minha jornada de aprendizado durante o curso **DevIn
 
 **📊 Progresso Atual**
 - ✅ Módulo 01: Em andamento
-- 📝 Semana atual: 07
-- 💻 Exercícios: 60+
+- 📝 Semana atual: 08
+- 💻 Exercícios: 65+
 - 📂 Projetos: 1 avaliativo (✅ concluído)
 
 </td>
@@ -124,7 +124,38 @@ Este repositório documenta minha jornada de aprendizado durante o curso **DevIn
 **Exercícios Principais:**
 - 📐 Modelagem conceitual com BrModelo (diagrama biblioteca/livros)
 - 🗃️ Normalização de dados
-- � Diagramas Entidade-Relacionamento
+- 📊 Diagramas Entidade-Relacionamento
+
+### [📂 Semana 08 - Modelagem NoSQL e SQL Essencial](./modulo_01_programacao_e_modelagem_de_dados/semana_08)
+> Modelagem não relacional (Documentos, Grafos, Colunas, Chave-Valor) e SQL DDL/DML
+
+**Exercícios Principais:**
+- 📋 Conceitos NoSQL (MongoDB, Redis, Neo4j, Cassandra)
+- 🏗️ DDL: CREATE, ALTER, DROP TABLE
+- ✏️ DML: INSERT, UPDATE, DELETE
+- 🔍 Consultas SQL com filtros e ordenação
+
+---
+
+### [🏥 Mini Projeto - Análise Healthcare Dataset](./modulo_01_programacao_e_modelagem_de_dados/Mini%20Projeto)
+> **🌟 PROJETO AVALIATIVO EM DESTAQUE** - Análise completa de dados hospitalares - ✅ **CONCLUÍDO**
+
+**Destaques:**
+- 📋 Dataset: 15 variáveis, 55.000+ registros, período 2019-2024
+- 🧹 Limpeza: Estratégia inteligente de duplicatas + padronização de hospitais
+- 🔍 Técnica IQR para detecção de outliers
+- 🎯 Feature Engineering: grupos etários, dias internação, custo diário
+- 📊 3 visualizações profissionais (custos e distribuição hospitalar)
+- 📝 Relatório final com insights, padrões e hipóteses
+
+**Stack Completo:**
+```
+Python | Pandas | NumPy | Matplotlib | Seaborn | Jupyter Notebook
+```
+
+**[📂 Ver Projeto Completo →](./modulo_01_programacao_e_modelagem_de_dados/Mini%20Projeto)**
+
+---
 
 ### [🏥 Mini Projeto - Análise Healthcare Dataset](./modulo_01_programacao_e_modelagem_de_dados/Mini%20Projeto)
 > **Projeto Avaliativo:** Análise completa de dados hospitalares - ✅ **CONCLUÍDO**
@@ -133,33 +164,48 @@ Este repositório documenta minha jornada de aprendizado durante o curso **DevIn
 - 📋 Dataset: 15 variáveis, 55.000+ registros, período 2019-2024
 - 🧹 Limpeza: Estratégia inteligente de duplicatas + padronização de hospitais
 - 🔍 Técnica IQR para detecção de outliers
-- � Feature Engineering: grupos etários, dias internação, custo diário
+- 🎯 Feature Engineering: grupos etários, dias internação, custo diário
 - 📊 3 visualizações profissionais (custos e distribuição hospitalar)
-- � Relatório final com insights, padrões e hipóteses
+- 📝 Relatório final com insights, padrões e hipóteses
 
 </details>
 
 <details>
-<summary><b>📁 Módulo 02 - SQL e Banco de Dados</b> (Em breve)</summary>
+<summary><b>📁 Módulo 02 - Arquitetura e Visualização de Dados</b> (Em breve)</summary>
 
-- Modelagem de dados
-- Consultas SQL avançadas
-- Normalização e otimização
-
-</details>
-
-<details>
-<summary><b>📁 Módulo 03 - Visualização e BI</b> (Em breve)</summary>
-
-- Power BI
-- Dashboards interativos
+- Arquitetura de dados
+- Visualização avançada
+- Power BI e dashboards
 - Storytelling com dados
+
+</details>
+
+<details>
+<summary><b>📁 Módulo 03 - IA, RPA e Aplicações Preditivas</b> (Em breve)</summary>
+
+- Inteligência Artificial
+- Automação de processos (RPA)
+- Machine Learning
+- Modelos preditivos
 
 </details>
 
 ---
 
 ## 🏆 Exercícios em Destaque
+
+### 🌟 [Mini Projeto - Análise Healthcare Dataset](./modulo_01_programacao_e_modelagem_de_dados/Mini%20Projeto)
+```
+🎯 Projeto avaliativo completo com dados hospitalares
+🛠️ Stack: Python, Pandas, NumPy, Matplotlib, Seaborn, Jupyter
+📊 Análise: 55.000+ registros, 15 variáveis, período 2019-2024
+🔍 Técnicas: Limpeza de dados, IQR, Feature Engineering, EDA
+📈 Insights: Custos por condição médica, padrões hospitalares, grupos etários
+✅ Status: CONCLUÍDO - Nota pendente
+```
+[**📂 Ver Projeto Completo →**](./modulo_01_programacao_e_modelagem_de_dados/Mini%20Projeto)
+
+---
 
 ### 📊 [Análise de Dados com Pandas - Semana 5](./modulo_01_programacao_e_modelagem_de_dados/semana_05/Trello/devinhouse-semana5-notebook)
 ```
@@ -191,12 +237,12 @@ Este repositório documenta minha jornada de aprendizado durante o curso **DevIn
 
 | Métrica | Valor |
 |---------|-------|
-| 📝 **Exercícios Completos** | 60+ |
-| 📚 **Listas de Exercícios** | 14+ |
-| 💻 **Linhas de Código** | 2000+ |
-| 📖 **READMEs Documentados** | 10 |
-| ⏱️ **Horas de Estudo** | 120+ |
-| 🎯 **Projetos Avaliativos** | 1 (Mini Projeto) |
+| 📝 **Exercícios Completos** | 65+ |
+| 📚 **Listas de Exercícios** | 16+ |
+| 💻 **Linhas de Código** | 2500+ |
+| 📖 **READMEs Documentados** | 12 |
+| ⏱️ **Horas de Estudo** | 140+ |
+| 🎯 **Projetos Avaliativos** | 1 (Mini Projeto ✅) |
 
 </div>
 
@@ -213,8 +259,24 @@ Este repositório documenta minha jornada de aprendizado durante o curso **DevIn
 ### **Análise de Dados**
 - ✅ Manipulação com Pandas
 - ✅ Computação numérica com NumPy
-- ✅ Leitura e escrita de CSV/JSON
+- ✅ Leitura e escrita de CSV/JSON/Excel
 - ✅ Limpeza e transformação de dados
+- ✅ Tratamento de outliers (IQR)
+- ✅ Feature Engineering
+- ✅ Análise Exploratória de Dados (EDA)
+
+### **Modelagem e Banco de Dados**
+- ✅ Modelagem de dados relacional (ER)
+- ✅ Normalização (1FN, 2FN, 3FN)
+- ✅ Modelagem NoSQL (Documentos, Grafos, Colunas, Chave-Valor)
+- ✅ SQL DDL (CREATE, ALTER, DROP)
+- ✅ SQL DML (INSERT, UPDATE, DELETE, SELECT)
+- ✅ Consultas com filtros e ordenação
+
+### **Visualização**
+- ✅ Matplotlib (gráficos básicos)
+- ✅ Seaborn (visualização estatística)
+- ✅ Gráficos de correlação e distribuição
 
 ### **Ferramentas**
 - ✅ Git/GitHub (versionamento)
@@ -226,10 +288,11 @@ Este repositório documenta minha jornada de aprendizado durante o curso **DevIn
 
 ## 🌱 Em Aprendizado
 
-- 🔄 SQL e modelagem de banco de dados
-- 📊 Power BI e dashboards interativos
-- 📈 Visualização avançada (Matplotlib, Seaborn)
-- 🤖 Machine Learning (próximos módulos)
+-  Power BI e dashboards interativos
+- 🏗️ Arquitetura de dados e pipelines
+- 📈 Visualização avançada de dados
+- 🤖 Machine Learning e IA (próximos módulos)
+- 🔄 RPA e automação de processos
 
 ---
 
