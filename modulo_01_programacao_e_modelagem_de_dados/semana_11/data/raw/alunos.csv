@@ -1,0 +1,12 @@
+id_aluno,nome,email,senha,telefone
+1.0,Ana Silva,ana.silva@email.com,12345,85999990000
+2.0,joao   pereira,joao@email.com,senha123,85 98888-7777
+3.0,MARIA OLIVEIRA,,,
+4.0,,maria@gmail,pass,85911110000
+4.0,maria oliveira,maria@gmail,pass, 85911110000 
+5.0,Carlos Sousa,carlos_sousa@,c4rl0s,85-9999-0000
+,  ana silva ,ana.silva@email.com,12345,85999990000
+7.0,Beatriz Lima,b.lima@email.com,btrz,85 90000 1111
+8.0,PEDRO   SANTOS,pedro@@mail.com,,
+9.0,LuizF,,senha!,85)9999-9999
+10.0,   ,luiz@email,,85912341234
