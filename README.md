@@ -44,8 +44,8 @@ Este repositório documenta minha jornada de aprendizado durante o curso **DevIn
 
 **📊 Progresso Atual**
 - ✅ Módulo 01: Em andamento
-- 📝 Semana atual: 09
-- 💻 Exercícios: 70+
+- 📝 Semana atual: 11
+- 💻 Exercícios: 80+
 - 📂 Projetos: 1 avaliativo (✅ concluído)
 
 </td>
@@ -145,6 +145,24 @@ Este repositório documenta minha jornada de aprendizado durante o curso **DevIn
 - 🧩 Subconsultas e CTEs (Common Table Expressions)
 - 📅 Funções de data e texto (MONTH, YEAR, CONCAT, SUBSTRING)
 - 👁️ Criação e gerenciamento de Views
+
+### [📂 Semana 11 - ETL Pipeline e PostgreSQL](./modulo_01_programacao_e_modelagem_de_dados/semana_11)
+> Pipeline ETL profissional com PostgreSQL, transformação de dados e análise
+
+**⚠️ PROJETO EM DESENVOLVIMENTO - Estrutura inicial criada**
+
+**Exercícios Principais:**
+- 📦 Extração de dados (CSV, Excel, múltiplos arquivos)
+- 🔄 Transformação e limpeza de dados
+- 💾 Carregamento em múltiplos formatos (CSV, Parquet, PostgreSQL)
+- 🔗 Integração com PostgreSQL usando psycopg3
+- 📊 Análise exploratória de dados
+- 📓 Jupyter Notebook com workflow completo
+
+**Stack Tecnológico:**
+```
+Python | Pandas | NumPy | PostgreSQL | psycopg3 | Jupyter | Parquet
+```
 
 ---
 
